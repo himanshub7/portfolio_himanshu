@@ -1,0 +1,29 @@
+/* .imageBack{
+    background-image: url('../background.jpg');
+    min-height: 100%;
+    background-size: cover;
+    height: 100vh;
+} */
+.btn:hover{
+    background-color: rgb(110, 199, 62);
+}
+.marginA{
+    margin-left: 33%;
+    width: 100px;
+    margin-bottom: 16px;
+}
+/* @media (max-width:391px){
+    .marginA{
+        margin-left: 20%;
+    }
+} */
+.marginB{
+    margin-left: 8px;
+    width: 100px;
+    margin-bottom: 16px;
+}
+.btn{
+    background-color: white;
+    margin-top: 16px;
+    /* margin-left: 8px; */
+}

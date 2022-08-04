@@ -1,0 +1,270 @@
+<div class="freshBackground">
+    <div class="navigation">
+        <!-- <div class="left">
+            <i class="fa fa-arrows-alt"></i><span style="margin-left:7px;">P O R T F O L I O</span>
+        </div>
+        <div class="middle">
+            <button class="home" style="color:white" (click)="homes()">H O M E</button>
+            <button class="home" style="color:white" (click)="abouts()">A B O U T</button>
+            <button class="home" style="color:white" (click)="servicess()">S E R V I C E S</button>
+            <button class="home" style="color:white" (click)="contacts()">C O N T A C T</button> -->
+            <!-- <a href="C:\Users\himanshu bhutani\Desktop\Portfolio\src\app" download="Himanshu_CV">Download</a> -->
+        <!-- </div>
+        <div class="right">
+            <a href="https://www.linkedin.com/home?originalSubdomain=in" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-3 left">
+                <i class="fa fa-arrows-alt"></i><span style="margin-left:7px;">P O R T F O L I O</span>
+            </div>
+            <div class="col-md-7 middle">
+                <button class="home" style="color:white" (click)="homes()">H O M E</button>
+                <button class="home" style="color:white" (click)="abouts()">A B O U T</button>
+                <button class="home" style="color:white" (click)="servicess()">S E R V I C E S</button>
+                <button class="home" style="color:white" (click)="contacts()">C O N T A C T</button>
+            </div>
+            <div class="col-md-2 right">
+                <a href="https://www.linkedin.com/home?originalSubdomain=in" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <div class="row" *ngIf="home">
+            <div class="col-md-5">
+                <h1 class="">
+                    Hey!
+                </h1>
+                <h1>
+                    I am <h1 style="color:white">Himanshu.</h1>
+                </h1>
+                <h2>
+                    I'm a <p style="color:white;display: inline;">Web Developer.</p>
+                </h2>
+            </div>
+            <div class="col-md-4">
+                <img class="imageHim" src="https://media-exp1.licdn.com/dms/image/C5103AQGlkquiRS7adA/profile-displayphoto-shrink_200_200/0/1581496300643?e=2147483647&v=beta&t=AAIKoMsM6mxQOFJLA8Wf-Pau0ZWk8_Xqmadu7WQ95mo" alt="Photo">
+                <!-- <img src="https://www.tutorialspoint.com/static/images/logo-color-footer.png" alt="Photo"> -->
+            </div>
+        </div>
+
+        <div *ngIf="about">
+                <div class="about">
+                    <h2 style="color:white;">
+                        About Me
+                    </h2>
+                    <p>I am a Delhi based web-developer. I develop using Angular Framework and use Bootstrap, CSS to make them responsive.</p>
+                    <div class="row">
+                        <div class="col-md-3" style="color:white;font-weight:bold;">
+                            Name :
+                        </div>
+                        <div class="col-md-3">
+                            Himanshu Bhutani
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3" style="color:white;font-weight:bold;">
+                            Date of birth :
+                        </div>
+                        <div class="col-md-3">
+                            07 OCTOBER 1996
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3" style="color:white;font-weight:bold;">
+                            Address :
+                        </div>
+                        <div class="col-md-3">
+                            Delhi
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3" style="color:white;font-weight:bold;">
+                            Email Id :
+                        </div>
+                        <div class="col-md-3">
+                            himanshu.bhutani@gmail.com
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3" style="color:white;font-weight:bold;">
+                            Phone Number :
+                        </div>
+                        <div class="col-md-3">
+                            9999999999
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="experience">
+                    <h2 style="color:white;">
+                        Experience
+                    </h2>
+                    <ul>
+                        <li style="font-weight:300">
+                            Infosys (Aug'2019-May'2022 ~ 2 YEARS 9 MONTHS)
+                            <div style="color:white">
+                                Worked as a frontend developer in Angular Technology. Contributed to developing new generation Income Tax Website of India.
+                                Responsible for creating various statutory forms like Form 35, Form 6, Form 3CEAA etc.
+                            </div> 
+                        </li>
+
+                        <li style="font-weight:300;margin-top: 20px;">
+                            Cognizant (May'2022-Present)
+                            <div style="color:white">
+                                Working as a fullstack developer.
+                            </div> 
+                        </li>
+
+                        <!-- <li style="font-weight:300;margin-top: 20px;">
+                            LEUFTechnologies (2017 ~ 2 MONTHS) - INTERNSHIP
+                            <div style="color:white">
+                                Worked as a frontend developer in Angular Technology. Contributed to developing new generation Income Tax Website of India.
+                                Responsible for creating various statutory forms like Form 35, Form 6, Form 3CEAA etc.
+                            </div> 
+                        </li>
+                        <li style="font-weight:300;margin-top: 20px;">
+                            Austere Technology (2018 ~ 2 MONTHS) - INTERNSHIP
+                            <div style="color:white">
+                                Worked as a frontend developer in Angular Technology. Contributed to developing new generation Income Tax Website of India.
+                                Responsible for creating various statutory forms like Form 35, Form 6, Form 3CEAA etc.
+                            </div> 
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="certifications">
+
+                    <h2 class="certificate">Certifications</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <mat-card class="certificateCard">
+                                <mat-card-title style="text-align:center;color:black;font-weight:bold;">
+                                    <div>Infosys Certified Full Stack Developer</div>
+                                    _____________________
+                                    <div [ngClass]="{'spinner-border':yesOrNo==2?true:false}" role="status">
+                                        <!-- <span class="sr-only">Loading...</span> -->
+                                    </div>
+                                </mat-card-title>
+                                <mat-card-content style="margin-top:20px;color: black;text-align: center;">
+                                    Infosys Trained Java Full Stack Developer - 2019
+                                </mat-card-content>
+                            </mat-card>
+                        </div>
+
+                        <div class="col-md-6">
+                            <mat-card class="certificateCard">
+                                <mat-card-title style="text-align:center;color:black;font-weight:bold">
+                                    <div>Core Java Developer</div>
+                                    _____________
+                                    <!-- <div [ngClass]="{'spinner-border':yesOrNo==2?true:false}" role="status"> -->
+                                        <!-- <span class="sr-only">Loading...</span> -->
+                                    <!-- </div> -->
+                                </mat-card-title>
+                                <mat-card-content style="margin-top:20px;color: black;text-align: center;">
+                                    NIIT Certified Java Developer - 2016
+                                </mat-card-content>
+                            </mat-card>
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </div>
+        
+
+        <div class="services" *ngIf="services">
+            <h2 style="color:white;">
+                    Services
+            </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <mat-card class="serviceCard">
+                        <mat-card-title style="text-align:center;color:black;font-weight:bold;">
+                            <div>Website Responsiveness</div>
+                            _____________________
+                            <div [ngClass]="{'spinner-border':yesOrNo==2?true:false}" role="status">
+                                <!-- <span class="sr-only">Loading...</span> -->
+                              </div>
+                        </mat-card-title>
+                        <mat-card-content style="margin-top:20px;color: black;text-align: center;">
+                            I design websites which can be used on both desktops and mobile devices because of their responsiveness.
+                            If any concern, please write to me at my email.
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+                <div class="col-md-6">
+                    <mat-card class="serviceCard">
+                        <mat-card-title style="text-align:center;color:black;font-weight:bold">
+                            <div>Interactive User Interface</div>
+                            _____________________
+                            <div [ngClass]="{'spinner-border':yesOrNo==2?true:false}" role="status">
+                                <!-- <span class="sr-only">Loading...</span> -->
+                              </div>
+                        </mat-card-title>
+                        <mat-card-content style="margin-top:20px;color: black;text-align: center;">
+                            The site functionalities would be user friendly so as to make user take full advantage of it.
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="contact" *ngIf="contact">
+            <h2 style="color:white;">
+                Contact
+            </h2>
+            <div style="color:white">
+                Mobile : <span style="color: yellow">9868319966</span> 
+            </div> 
+            <div style="color:white">
+                Email ID : <span style="color: yellow">himanshu.bhutani7@gmail.com</span> 
+            </div>
+        </div>
+
+        
+        
+    </div>
+
+    <button class="show btn" (click)="showAll()" [disabled]="home && about && services && contact">
+        SHOW ALL
+    </button>
+
+</div>
+
+
+<!-- <div class="sticky">I will stick to the screen when you reach my scroll position</div>
+<div class="background">
+
+    <div class="row">
+        <button class="col-md-2 btn marginA" (click)="home()">Home</button>
+        <button class="col-md-3 btn marginB" (click)="project()">Projects</button>
+        <button class="col-md-3 btn marginB" (click)="skill()">Skills</button>
+        <button class="col-md-3 btn marginB" (click)="contact()">Contact</button>
+    </div>
+
+    <div class="nav">
+        Hii Hello
+    </div>
+    
+    <div style="text-align:center;color:gold">
+        <h1 class="colorHoverA">HIMANSHU BHUTANI</h1>
+
+        <h6>Hello! I am a Delhi-based freelancer.</h6>
+        <h6>I am working as a Programmer Analyst in Cognizant.</h6>
+        <h6>My role is to develop websites using Angular 7 and make it responsive for all screen devices and browsers.</h6>
+    </div>
+
+    
+    <router-outlet></router-outlet>
+
+</div>     -->
