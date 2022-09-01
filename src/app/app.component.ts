@@ -153,10 +153,7 @@ export class AppComponent implements OnInit{
 
   navOpen(){
     this.navVisible=true;
-    window.scroll({ 
-      top: 0,
-      behavior: 'smooth' 
-    });
+    setTimeout(() => { this.scroller.scrollToAnchor('background') },200);
   }
 
   navClose(){
