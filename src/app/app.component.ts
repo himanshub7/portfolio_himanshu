@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -13,6 +14,7 @@ export class AppComponent implements OnInit{
   about:boolean=true;
   services:boolean=true;
   contact:boolean=true;
+  navVisible:boolean=false;
   
 
   obj1= {
@@ -23,7 +25,7 @@ export class AppComponent implements OnInit{
   }
   
 
-  constructor(private router:Router){
+  constructor(private router:Router, private scroller:ViewportScroller){
 
   }
   
@@ -35,58 +37,130 @@ export class AppComponent implements OnInit{
   
 
   homes(){
-    this.home=true;
-    this.about=false;
-    this.services=false;
-    this.contact=false;
-    window.scroll({ 
-      top: 0,
-      behavior: 'smooth' 
-    });
+    // this.home=true;
+    // this.about=false;
+    // this.services=false;
+    // this.contact=false;
+    this.navVisible=false;
+    this.scroller.scrollToAnchor('home');
+    // window.scroll({ 
+    //   top: 0,
+    //   behavior: 'smooth' 
+    // });
   }
 
   abouts(){
-    this.home=false;
-    this.about=true;
-    this.services=false;
-    this.contact=false;
-    window.scroll({ 
-      top: 0,
-      behavior: 'smooth' 
-    });
+    // this.home=false;
+    // this.about=true;
+    // this.services=false;
+    // this.contact=false;
+    this.navVisible=false;
+    this.scroller.scrollToAnchor('about');
+    // window.scroll({ 
+    //   top: 0,
+    //   behavior: 'smooth' 
+    // });
   }
 
   servicess(){
-    this.home=false;
-    this.about=false;
-    this.services=true;
-    this.contact=false;
-    window.scroll({ 
-      top: 0,
-      behavior: 'smooth' 
-    });
+    // this.home=false;
+    // this.about=false;
+    // this.services=true;
+    // this.contact=false;
+    this.navVisible=false;
+    this.scroller.scrollToAnchor('services');
+    // window.scroll({ 
+    //   top: 0,
+    //   behavior: 'smooth' 
+    // });
   }
 
   contacts(){
-    this.home=false;
-    this.about=false;
-    this.services=false;
-    this.contact=true;
+    // this.home=false;
+    // this.about=false;
+    // this.services=false;
+    // this.contact=true;
+    this.navVisible=false;
+    this.scroller.scrollToAnchor('contact');
+    // window.scroll({ 
+    //   top: 0,
+    //   behavior: 'smooth' 
+    // });
+  }
+
+  homesNav(){
+    // this.home=true;
+    // this.about=false;
+    // this.services=false;
+    // this.contact=false;
+    // window.scroll({ 
+    //   top: 0,
+    //   behavior: 'smooth' 
+    // });
+    this.navVisible=false;
+    setTimeout(() => { this.scroller.scrollToAnchor('home') },200);
+  }
+
+  aboutsNav(){
+    // this.home=false;
+    // this.about=true;
+    // this.services=false;
+    // this.contact=false;
+    // window.scroll({ 
+    //   top: 0,
+    //   behavior: 'smooth' 
+    // });
+    this.navVisible=false;
+    setTimeout(() => { this.scroller.scrollToAnchor('about') },200);
+  }
+
+  servicessNav(){
+    // this.home=false;
+    // this.about=false;
+    // this.services=true;
+    // this.contact=false;
+    // window.scroll({ 
+    //   top: 0,
+    //   behavior: 'smooth' 
+    // });
+    this.navVisible=false;
+    setTimeout(() => { this.scroller.scrollToAnchor('services') },200);
+  }
+
+  contactsNav(){
+    // this.home=false;
+    // this.about=false;
+    // this.services=false;
+    // this.contact=true;
+    // window.scroll({ 
+    //   top: 0,
+    //   behavior: 'smooth' 
+    // });
+    this.navVisible=false;
+    setTimeout(() => { this.scroller.scrollToAnchor('contact') },200);
+  }
+
+  // showAll(){
+  //   this.home=true;
+  //   this.about=true;
+  //   this.services=true;
+  //   this.contact=true;
+  //   window.scroll({ 
+  //     top: 0,
+  //     behavior: 'smooth' 
+  //   });
+  // }
+
+  navOpen(){
+    this.navVisible=true;
     window.scroll({ 
       top: 0,
       behavior: 'smooth' 
     });
   }
 
-  showAll(){
-    this.home=true;
-    this.about=true;
-    this.services=true;
-    this.contact=true;
-    window.scroll({ 
-      top: 0,
-      behavior: 'smooth' 
-    });
+  navClose(){
+    this.navVisible=false;
   }
   
   // project(){

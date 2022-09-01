@@ -1,5 +1,13 @@
+/* .stickyy{
+    position:fixed;
+    top:0;
+    background-color: red;
+    height: 50px;
+} */
+
 .freshBackground{
     background-image: url('background2.jpg');
+    /* position: relative; */
     /* background-color: white; */
     min-height: 150%;
     background-size: cover;
@@ -8,10 +16,12 @@
     overflow-x: hidden;
 }
 .navigation{
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: rgb(74, 101, 112);
+    border-bottom: 1px solid black;
     max-height: 250px;
+    width: 100%;
 }
 div.left{
     /* position: absolute; */
@@ -89,6 +99,65 @@ div.row .col-md-3{
     /* color: rgba(212, 122, 25, 0.744); */
     color: yellow;
 }
+
+.hey{
+    padding-top: 55px;
+}
+
+/* @media (min-width: 503px) and (max-width: 767px){
+    .hey{
+        padding-top: 35px;
+    }
+}
+
+@media (min-width: 285px) and (max-width: 503px){
+    .hey{
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 285px){
+    .hey{
+        padding-top: 70px;
+    }
+} */
+
+@media (max-width: 767px){
+    .navBar{
+        position: absolute;
+        right: 25px;
+        display: inline-block !important;
+        text-align: right;
+        /* margin-left: 70%; */
+    }
+    .minimize{
+        padding-top: 7px !important;
+        line-height: 0;
+        font-size: xx-large !important;;
+    }
+    .left{
+        text-align: left !important;
+    }
+    .middle{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+}
+
+.navBar{
+    justify-content: right;
+    padding: 5px;
+    font-size: larger;
+    color: white !important;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
 /* .animateHey{
   position: absolute;
   top: 50%;
@@ -178,7 +247,11 @@ mat-card.certificateCard{
 }
 
 .imageHim{
+    border-radius: 45px;
+}
+.imageHimanshu{
     border-radius: 80px;
+    height: 200px;
 }
 
 div.about{
@@ -229,6 +302,7 @@ div.home{
 }
 .content{
     margin: 120px;
+    /* margin-top: 0px; */
     margin-left: 20%;
 }
 .sticky {
@@ -281,4 +355,23 @@ div.home{
     background-color: white;
     margin-top: 16px;
     /* margin-left: 8px; */
+}
+
+.navOpen{
+    background-color: rgb(74, 101, 112);
+    min-height: 108vh;
+    margin-top: 50px;
+    display: none;
+}
+
+@media (max-width: 767px){
+    .navOpen{
+        display: block;
+    }
+}
+
+.homeNav{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    padding-left: 26px;
 }
