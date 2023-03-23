@@ -8,6 +8,7 @@ import { ProjectComponent } from './project/project.component';
 import { SkillComponent } from './skill/skill.component';
 import { ContactComponent } from './contact/contact.component';
 import {MatCardModule} from '@angular/material/card';
+import { HoverLink } from 'src/directives/hoverLink.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {MatCardModule} from '@angular/material/card';
     MainComponent,
     ProjectComponent,
     SkillComponent,
-    ContactComponent
+    ContactComponent,
+    HoverLink
   ],
   imports: [
     BrowserModule,

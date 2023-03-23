@@ -1,6 +1,7 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HoverLink } from 'src/directives/hoverLink.directive';
 
 @Component({
   selector: 'app-root',
